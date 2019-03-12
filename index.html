@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Middle.css">
+    <script src="Back-end.js"></script>
+</head>
+<body>
+    <form id="my form" action="#">
+        <h1>Meme Generator</h1>
+        <span><label for="">Image Link</label></span>
+        <input type="text" id="image link">
+        <div><span><label for="">Text on Top</label></span>
+        <input type="text" id="top text"></div>
+        <div><span><label for="">Text on Bottom</label></span>
+        <input type="text" id="bottom text"></div>
+        <input type="submit" id="Add_button" onclick="showInput()">
+    </form>
+    <hr>
+    <script>
+        function clearForm() {
+            document.getElementById("my form").reset();
+        }
+    </script>
+    <hr>
+    <table id="Table of Images">
+        <tr>
+            <td style="width:50%">
+                <div class="container">
+                    <a href="#" onclick=Erase("image_1")>
+                    <img class = "pictures" src="" id="image_1" style="max-width:100%;">
+                    <div class="top" id="image_1_header"></div>
+                    <div class="bottom" id="image_1_footer"></div>
+                    </div>
+                </td>
+            <td>
+                <div class="container">
+                    <a href="#" onclick=Erase("image_2")>
+                    <img class = "pictures" src="" id="image_2" style="max-width:100%;">
+                    <div class="top" id="image_2_header"></div>
+                    <div class="bottom" id="image_2_footer"></div>
+                </div>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container">
+                    <a href="#" onclick=Erase("image_3")>
+                    <img class = "pictures" src="" id="image_3" style="max-width:100%;">
+                    <div class="top" id="image_3_header"></div>
+                    <div class="bottom" id="image_3_footer"></div>
+                </div>
+            </td>
+            <td>
+            <div class="container">
+                <a href="#" onclick=Erase("image_4")>
+                <img class = "pictures" src="" id="image_4" style="max-width:100%;">
+                <div class="top" id="image_4_header"></div>
+                <div class="bottom" id="image_4_footer"></div>
+            </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
